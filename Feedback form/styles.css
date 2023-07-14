@@ -1,0 +1,154 @@
+body {
+    
+    display:flexbox;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 110px;
+    background-image: url('https://images4.alphacoders.com/900/900368.jpg');
+   background-color: #ffffff;
+  }
+  
+  .container {
+   
+
+    max-width: 500px;
+    margin: 0 auto;
+   background-color: rgba(234, 245, 247, 0.572);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  form {
+    width: 100%;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+  
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 25px;
+    background-image: url('arrow-down.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 15px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  .success {
+    color: green;
+    margin-top: 5px;
+    
+  }
+  /* ... Existing styles ... */
+
+  .rating-stars input[type="radio"] {
+    display: none;
+  }
+  
+  .rating-stars label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('https://static4.depositphotos.com/1026550/376/i/450/depositphotos_3763236-stock-photo-gold-star.jpg');
+    background-size: cover;
+    cursor: pointer;
+
+
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .rating-stars label:hover,
+  .rating-stars label:hover ~ label,
+  .rating-stars input[type="radio"]:checked ~ label {
+    background-image: url('https://img.freepik.com/premium-photo/star-white-space-isolated-3d-illustration_356060-847.jpg');
+  }
+  .rating {
+    display: inline-block;
+  }
+  
+  .rating input {
+    display: none;
+    
+
+  }
+  
+  .rating label {
+    float: right;
+    cursor: pointer;
+    color: #5e5757;
+    transition: color 0.3s;
+  }
+  
+  .rating label:before {
+    content: '\2605';
+    font-size: 30px;
+  }
+  
+  .rating input:checked ~ label,
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: #058af7dc;
+    transition: color 0.3s;
+
+  }
